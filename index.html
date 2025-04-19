@@ -1,0 +1,158 @@
+<!--
+    @fileoverview Página de demostración del Botón Flotante de YouTube
+    @autor Gianmattus-Programmer
+    @version 1.0.0
+    @description Esta página muestra un ejemplo de implementación del botón flotante de YouTube
+    con efectos visuales, animaciones y soporte completo para dispositivos móviles.
+    Características principales:
+    - Diseño responsivo
+    - Tema claro/oscuro
+    - Animaciones suaves
+    - Soporte para accesibilidad
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Previa - Botón YouTube</title>
+    <style>
+        /* Variables de colores y estilos globales */
+        :root {
+            --primary-color: #24292e;
+            --text-primary: #2c3e50;
+            --text-secondary: #576574;
+            --bg-color: #f8f9fa;
+        }
+
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos del cuerpo de la página */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        /* Contenedor principal del contenido */
+        .demo-content {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto hover en el contenedor */
+        .demo-content:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos de los encabezados */
+        h1 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* Estilos de los párrafos */
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Estilos de las listas */
+        ol {
+            background: #f8f9fa;
+            padding: 1.5rem 1.5rem 1.5rem 3rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        /* Estilos de los elementos de lista */
+        li {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Media queries para diseño responsivo */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .demo-content {
+                padding: 1.5rem;
+                margin: 1rem auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal de la demostración -->
+    <div class="demo-content">
+        <h1>Vista Previa del Botón de YouTube</h1>
+        <p>Este es un contenido de ejemplo para mostrar cómo se vería el botón flotante de YouTube en tu sitio web. El botón se mostrará en la esquina inferior derecha de la pantalla.</p>
+        
+        <!-- Instrucciones de uso -->
+        <p>Para probar la funcionalidad:</p>
+        <ol>
+            <li>Haz clic en el botón flotante de YouTube</li>
+            <li>El botón se expandirá mostrando el texto "Suscríbete"</li>
+            <li>Al hacer clic serás redirigido al canal de YouTube</li>
+        </ol>
+        
+        <!-- Descripción de beneficios -->
+        <p>Mejora la visibilidad de tu canal de YouTube implementando este botón flotante en tu sitio web. Permite que tus visitantes se suscriban a tu contenido de manera sencilla y atractiva.</p>
+        <p>Con nuestro botón de YouTube, podrás aumentar tus suscriptores, compartir tu contenido y crear una comunidad alrededor de tus videos. La integración directa con YouTube mejora tu presencia en la plataforma.</p>
+        
+        <!-- Firma del desarrollador -->
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #666;">
+            Developed and Designed by 
+            <a href="https://www.youtube.com/@gianmattus-programmer" style="color: #ff0000; text-decoration: none; font-weight: 500;">
+                Gianmattus-Programmer
+            </a>
+        </p>
+    </div>
+
+    <!-- Script principal del botón flotante -->
+    <script src="github.js"></script>
+    
+    <!--
+        @note Fin de la página de demostración
+        Para personalizar:
+        1. Modificar el contenido de demostración
+        2. Ajustar estilos del contenedor
+        3. Cambiar colores y tipografía
+        4. Actualizar los textos descriptivos
+    -->
+</body>
+</html>
